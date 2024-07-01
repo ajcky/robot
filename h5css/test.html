@@ -12,6 +12,9 @@
 <div>
     <div class="cl">
         <span class="s">sssss</span>
+        <span class="s">sssss</span>
+        <span class="s">sssss</span>
+        <div>wwwww</div>
     </div>
 <!--    <div class="cl"> eee</div>-->
 </div>
@@ -22,11 +25,14 @@
     }
     .cl {
         background-image: url(./img/1.png);
-        background-repeat: repeat;
+        /*background: transparent url(./img/1.png) no-repeat center center;*/
+        /*background-repeat: repeat;*/
+        background-position: 100% top;
+        /*背景固定*/
         background-attachment : fixed;
         /*height: 240rem;*/
         .s {
-            font-size: 50rem;
+            font-size: 5rem;
             color: #ff0000;
         }
     }
