@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        li {
+            list-style: none;
+        }
+        .content {
+            /*background 压缩显示*/
+            background: url("../img/2.png") no-repeat center center;
+            width: 1000px;
+            height: 500px;
+            position: relative;
+        }
+        .left,.right {
+            position: absolute;
+            top:50%;
+            width: 40px;
+            height: 50px;
+            background: rgba(0,0,0,.2);
+            margin-top:-25px;
+            text-align: center;
+            line-height: 50px;
+            /*border-radius: 50%;*/
+            font-size: 25px;
+            text-decoration: none;
+        }
+        .left {
+            left: 0;
+            border-top-right-radius: 30px;
+            border-bottom-right-radius: 30px;
+        }
+        .right {
+            right: 0;
+            border-radius: 30px 0 0 30px;
+        }
+        .bottom {
+            width: 100px;
+            height: 13px;
+            position: absolute;
+            left:50%;
+            bottom:10%;
+            margin-left:-50px;
+        }
+        .circle {
+            display: flex;
+            justify-content: space-between;
+        }
+        li {
+           background: #bbbbbb;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="left"><</div>
+        <div class="right"> > </div>
+        <div class="bottom">
+            <ul class="circle">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
